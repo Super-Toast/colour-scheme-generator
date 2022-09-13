@@ -45,7 +45,8 @@ function generateColors() {
             document.getElementById("colors-container").style.display = "flex"
             btnGenerate.style.display = "none"
             firstTime = false
-        }        
+        }
+        colorModeSelector.style.display = "block"      
     })
 }
 
