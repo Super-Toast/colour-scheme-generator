@@ -46,7 +46,9 @@ function generateColors() {
             btnGenerate.style.display = "none"
             firstTime = false
         }
-        colorModeSelector.style.display = "block"      
+        colorModeSelector.style.display = "block"
+        document.getElementById("colors-section").style.display = "block"
+        copyToClipboard()     
     })
 }
 
@@ -59,3 +61,11 @@ colorModeSelector.addEventListener("change", function(e) {
     e.preventDefault()
     generateColors()
 })
+
+function copyToClipboard() {
+    document.querySelectorAll(".color").forEach(el => {
+        el.addEventListener("click", () => {
+            navigator.clipboard.writeText(el.id)
+        })
+    })
+}

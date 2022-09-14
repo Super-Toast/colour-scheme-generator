@@ -7,15 +7,22 @@ html, body {
     letter-spacing: 1px;
 }
 
+#colors-section,
 #colors-container {
-    display: flex;
     margin: 15px auto;
-    overflow: hidden;
-    border-radius: 10px;
-    background: white;
-    padding: 20px;
     width: 90%;
     display: none;
+}
+
+#colors-section {
+    padding: 20px;
+    border-radius: 10px;
+    background: white;
+}
+
+#colors-section p {
+    text-align: center;
+    margin-bottom: 25px;
 }
 
 #colors-values {
@@ -107,4 +114,16 @@ h1 {
 
 #color-mode-selector {
     display: none;
+}
+
+.color {
+    cursor: pointer;
+    transition: 200ms;
+}
+
+.color:hover,
+.color:focus {
+    border: solid #000 2px;
+    border-radius: 5px;
+    transform: scale(1.05);
 }
