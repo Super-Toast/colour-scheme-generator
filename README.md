@@ -1,9 +1,11 @@
 # colour-scheme-generator
 Generates colour schemes based on a colour
 
-the app lets the user pick a colour then it uses an api to retrieve the colour schemes
+the app lets the user pick a colour then it uses an API to retrieve the colour schemes
 
 the user can change the colour, the number of colours displayed and the scheme type
+
+*API available at https://www.thecolorapi.com/
 
 
 img1 shows the default parameters on the homepage when the site first loads
